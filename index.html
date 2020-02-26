@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>音乐播放器</title>
+		<link rel="stylesheet" type="text/css" href="css/音乐播放器.css" />
+
+	</head>
+
+	<body>
+		<div class="top">
+			
+		<img src="img/播放列表 (1).png" id="bofangliebiao"/>
+			<div class="search-input-wrap">
+				<input type="text" name="" id="search" value="" placeholder="歌曲/MV/专辑/歌单/达人/歌词" />
+
+				<button id="search-button">搜索</button>
+				<div class="search-result-wrap">
+					<ul id="search-result-list" >
+						<li class="search-result-item">
+							
+						</li>
+						<img src="img/添加.png" class="tianjia"/>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="tupian">
+			<div class="zhuanpan">
+				<div class="progress" style="display: inline-block;">
+					<div id="parcent" style="cursor: pointer;">
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="gongneng">
+				<img src="img/播放.png" id="bofang" style="width: 80px; height: 80px;" />
+			<img src="img/暂停.png" id="zanting" style="width: 80px; height: 80px;" />
+            <img src="img/上一首.png" id="shangyishou" style="width: 80px; height: 80px;"/>
+            <img src="img/下一首.png" id="xiayishou" style="width: 80px; height: 80px;"/>
+           <input type="range" name="volume" id="volume" value="" style="display: none;" />
+			</div>
+			
+		</div>
+		<audio src="" id="player"></audio>
+
+		<div class="lrc-wrap">
+			<ul id="lrc">
+
+			</ul>
+		</div>
+        <div class="tianjia-wrap">
+        	<ul class="tianjia-wrap-li">
+        		
+        	</ul>
+        	
+        </div>
+
+		<script src="js/音乐播放器.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/searc.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/功能.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lrc.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
